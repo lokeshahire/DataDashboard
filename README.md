@@ -96,6 +96,7 @@ To run the project locally:
 ```plaintext
 src/
 ├── components/
+│   ├── Dashboard.jsx
 │   ├── Filter.jsx
 │   ├── Sort.jsx
 │   ├── ItemCard.jsx
