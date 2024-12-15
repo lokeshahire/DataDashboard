@@ -56,11 +56,11 @@ This project involves building a **Data Dashboard** to display a list of items, 
 ## **Technologies Used**
 
 - **React.js**: Frontend library for building the UI components.
-- **HTML5/CSS3**: For layout and styling.
+- **CSS3**: For layout and styling.
 - **JavaScript (ES6+)**: Core functionality.
 - **Bootstrap**: For responsive design.
 - **JSON**: Mock data.
-- **Netlify/Vercel**: Hosting platform.
+- **Vercel**: Hosting platform.
 
 ---
 
