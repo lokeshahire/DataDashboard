@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4c6ef5;
+}
+
+button,
+.selectsort {
+  background-color: #4c6ef5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover,
+.selectsort:hover {
+  background-color: #3654e4;
+  transform: translateY(-3px);
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #4c6ef5;
+}
+
+.filter-container,
+.sort-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 0 10%;
+  flex-wrap: wrap;
+}
+
+.filter-container {
+  background: black;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 25px;
+  z-index: 999;
+}
+
+.sort-container {
+  margin-top: 12%;
+}
+
+select {
+  height: 50px;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.item-card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(0deg, #cdedff, #cdedff00);
+  box-shadow: 1px 3px 10px grey;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-card h3 {
+  font-size: 1.2rem;
+  color: #4c6ef5;
+}
+
+.item-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.item-card button {
+  background-color: #4caf50;
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.item-card button:hover {
+  background-color: #45a049;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-out;
+}
+
+.modal-content button {
+  background-color: #4c6ef5;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #3654e4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90% !important;
+  }
+  .sort-container {
+    margin-top: 50%;
+  }
+  .datatitle {
+    color: white;
+    margin: 0 auto;
+  }
+  .filter-container {
+    height: 200px;
+  }
+  .filter-container,
+  .sort-container {
+    padding: 10px;
+  }
+
+  .cards-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .item-card {
+    max-width: 100%;
+  }
+
+  button,
+  select {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-container,
+  .sort-container {
+    gap: 10px;
+  }
+
+  .item-card h3 {
+    font-size: 1rem;
+  }
+
+  .item-card p {
+    font-size: 0.9rem;
+  }
+}
+.datatitle {
+  color: white;
+}
