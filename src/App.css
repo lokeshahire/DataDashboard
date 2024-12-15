@@ -82,7 +82,6 @@ select {
   height: 50px;
 }
 
-/* Cards */
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -185,6 +184,10 @@ select {
 }
 
 @media (max-width: 768px) {
+  .sort-select {
+    margin: 0 auto;
+    display: flex;
+  }
   .modal-content {
     width: 90% !important;
   }

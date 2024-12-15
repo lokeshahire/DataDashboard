@@ -2,11 +2,11 @@
 
 ## Screenshots
 
-![Game Screenshot](https://github.com/user-attachments/assets/057e5c0c-717b-4ba8-b048-bf5133b40d21)
+![ Screenshot](https://github.com/user-attachments/assets/057e5c0c-717b-4ba8-b048-bf5133b40d21)
 
 ## Live Demo
 
-You can try the live demo here: [Demo](https://)
+You can try the live demo here: [Demo](https://data-dashboard-nu.vercel.app/)
 
 ---
 
